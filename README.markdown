@@ -3,7 +3,7 @@
 ## Overview
 Welcome to **HybridFeatureNet (HFN)**! This is a custom convolutional neural network (CNN) designed for the CIFAR-10 dataset, achieving a test accuracy of **90.83%** with only **2,127,121 parameters**. HFN incorporates innovative components like the **ASCR Layer** (Adaptive Suppression and Channel Refinement Layer), multi-scale feature extraction, attention mechanisms, and global context modules, making it a lightweight yet effective model for image classification.
 
-![HFN Architecture]()
+![HFN Architecture](Architecture_images/hfn_architecture.png)
 
 This project is shared for **experimental and educational purposes**, aimed at inspiring young developers like you to explore deep learning, create new architectures, or experiment with the ASCR Layer I introduced. While HFN may not compete with state-of-the-art models (e.g., ViT with 99% accuracy), its efficiency and custom design make it a great starting point for learning and innovation.
 
@@ -11,6 +11,7 @@ This project is shared for **experimental and educational purposes**, aimed at i
 - **Lightweight Architecture**: Only 2.13M parameters, making it much smaller than models like ResNet-50 (25.6M) or VGG-16 (15–20M for CIFAR-10).
 - **Solid Performance**: Achieves 90.83% accuracy on the CIFAR-10 test set.
 - **Innovative ASCR Layer**: A custom layer for adaptive feature suppression and channel refinement, which you can experiment with or adapt to other models.
+  
   ![ASCR Layer]()
 - **Multi-Scale and Attention Mechanisms**: Incorporates multi-scale feature extraction, attention modules, and global context for improved feature learning.
 - **Easy to Experiment With**: Well-commented code, modular design, and a simple training pipeline for you to modify and build upon.
