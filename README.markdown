@@ -15,7 +15,8 @@ This project is shared for **experimental and educational purposes**, aimed at i
   ![ASCR Layer](Architecture_images/ascr_layer_neural_network.png)
 - **Multi-Scale and Attention Mechanisms**: Incorporates multi-scale feature extraction, attention modules, and global context for improved feature learning.
 - **Easy to Experiment With**: Well-commented code, modular design, and a simple training pipeline for you to modify and build upon.
-  ![HFN Neural Image]()
+  
+  ![HFN Neural Image](Architecture_images/hfn_neural_network.png)
 
 ## Project Structure
 ```
