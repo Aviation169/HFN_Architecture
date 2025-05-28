@@ -20,7 +20,7 @@ This project is shared for **experimental and educational purposes**, aimed at i
 
 ## Project Structure
 ```
-hybrid_feature_net/
+HFN_Architecture/
 │
 ├── Architecture.py               # Main script with model, training, and evaluation
 ├── best_hybrid_feature_net.pth   # Model weight
