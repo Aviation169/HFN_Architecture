@@ -12,7 +12,7 @@ This project is shared for **experimental and educational purposes**, aimed at i
 - **Solid Performance**: Achieves 90.83% accuracy on the CIFAR-10 test set.
 - **Innovative ASCR Layer**: A custom layer for adaptive feature suppression and channel refinement, which you can experiment with or adapt to other models.
   
-  ![ASCR Layer]()
+  ![ASCR Layer](Architecture_images/ascr_layer_neural_network.png)
 - **Multi-Scale and Attention Mechanisms**: Incorporates multi-scale feature extraction, attention modules, and global context for improved feature learning.
 - **Easy to Experiment With**: Well-commented code, modular design, and a simple training pipeline for you to modify and build upon.
   ![HFN Neural Image]()
