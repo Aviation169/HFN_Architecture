@@ -176,6 +176,8 @@ Below is the confusion matrix for the CIFAR-10 test set, showing true labels (ro
 
 - **Overall Accuracy**: (928 + 954 + 881 + 805 + 903 + 870 + 922 + 931 + 939 + 950) / 10000 = 90.83%
 
+![Confusion Matrix](Architecture_images/Confusion_Matrix.png)
+
 ## Contributing
 This project is all about experimentation and learning! Here’s how you can get involved:
 - **Fork and Experiment**: Fork the repository, try new architectures, or tweak the ASCR Layer.
