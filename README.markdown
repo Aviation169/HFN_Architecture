@@ -3,26 +3,31 @@
 ## Overview
 Welcome to **HybridFeatureNet (HFN)**! This is a custom convolutional neural network (CNN) designed for the CIFAR-10 dataset, achieving a test accuracy of **90.83%** with only **2,127,121 parameters**. HFN incorporates innovative components like the **ASCR Layer** (Adaptive Suppression and Channel Refinement Layer), multi-scale feature extraction, attention mechanisms, and global context modules, making it a lightweight yet effective model for image classification.
 
+![HFN Architecture]()
+
 This project is shared for **experimental and educational purposes**, aimed at inspiring young developers like you to explore deep learning, create new architectures, or experiment with the ASCR Layer I introduced. While HFN may not compete with state-of-the-art models (e.g., ViT with 99% accuracy), its efficiency and custom design make it a great starting point for learning and innovation.
 
 ## Features
 - **Lightweight Architecture**: Only 2.13M parameters, making it much smaller than models like ResNet-50 (25.6M) or VGG-16 (15–20M for CIFAR-10).
 - **Solid Performance**: Achieves 90.83% accuracy on the CIFAR-10 test set.
 - **Innovative ASCR Layer**: A custom layer for adaptive feature suppression and channel refinement, which you can experiment with or adapt to other models.
+  ![ASCR Layer]()
 - **Multi-Scale and Attention Mechanisms**: Incorporates multi-scale feature extraction, attention modules, and global context for improved feature learning.
 - **Easy to Experiment With**: Well-commented code, modular design, and a simple training pipeline for you to modify and build upon.
+  ![HFN Neural Image]()
 
 ## Project Structure
 ```
 hybrid_feature_net/
 │
-├── hybrid_feature_net.py    # Main script with model, training, and evaluation
-├── README.md                # Project documentation (you're reading it!)
-├── requirements.txt         # Dependencies
-└── LICENSE                  # MIT License file
+├── Architecture.py               # Main script with model, training, and evaluation
+├── best_hybrid_feature_net.pth   # Model weight
+├── README.md                     # Project documentation (you're reading it!)
+├── requirements.txt              # Dependencies
+└── LICENSE                       # MIT License file
 ```
 
-**Note**: The trained model weights (`best_hybrid_feature_net.pth`) are not included due to file size. You can train the model to generate your own weights, or I can guide you on hosting them separately if needed.
+**Note**: This Architecture is just for testing and experimental purpose
 
 ## Installation
 Follow these steps to set up and run the project on your local machine.
@@ -35,10 +40,9 @@ Follow these steps to set up and run the project on your local machine.
 ### Steps
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/hybrid_feature_net.git
-   cd hybrid_feature_net
+   git clone https://github.com/Aviation169/HFN_Architecture.git
+   cd Architecture
    ```
-   Replace `your-username` with your GitHub username.
 
 2. **Install Dependencies**:
    ```bash
@@ -64,12 +68,12 @@ Follow these steps to set up and run the project on your local machine.
    ```
 
 ## Usage
-The `hybrid_feature_net.py` script includes everything you need to train, save, and evaluate the model on CIFAR-10, as well as test it on an unseen image.
+The `Architecture.ipynb` script includes everything you need to train, save, and evaluate the model on CIFAR-10, as well as test it on an unseen image.
 
 ### 1. Train the Model
 - **Run the Script**:
   ```bash
-  python hybrid_feature_net.py
+  Architecture.ipynb
   ```
 - **What Happens**:
   - Downloads the CIFAR-10 dataset to the `./data` directory.
@@ -87,7 +91,7 @@ The `hybrid_feature_net.py` script includes everything you need to train, save, 
 ### 2. Evaluate and Test
 - **Confusion Matrix**: After training, the script automatically generates a confusion matrix for the CIFAR-10 test set (10,000 images).
 - **Test on an Unseen Image**:
-  - Update the `image_path` variable in `hybrid_feature_net.py`:
+  - Update the `image_path` variable in `Architecture.ipynb`:
     ```python
     image_path = 'path/to/your/truck_image.jpg'  # Replace with your image path
     ```
@@ -184,7 +188,7 @@ This project is all about experimentation and learning! Here’s how you can get
 - **Optimize Training**: Experiment with learning rate schedules, optimizers, or test-time augmentation.
 
 ## License
-This project is licensed under the MIT License—see the [LICENSE](LICENSE) file for details. Feel free to use, modify, and share this code as you wish!
+This project is licensed under the MIT License—see the License file for details. Feel free to use, modify, and share this code as you wish!
 
 ## Acknowledgements
 - **Built With**: PyTorch, torchvision, NumPy, Matplotlib, Seaborn, Scikit-learn, Pillow.
@@ -194,7 +198,6 @@ This project is licensed under the MIT License—see the [LICENSE](LICENSE) file
 
 ## Contact
 If you have questions, ideas, or just want to chat about deep learning, feel free to reach out:
-- GitHub Issues: [Open an issue](https://github.com/your-username/hybrid_feature_net/issues)
-- Email: [your-email@example.com] (optional)
+- Email: [akajay14955j@gmail.com]
 
 Happy coding, and let’s keep pushing the boundaries of what’s possible with deep learning! 🎉
